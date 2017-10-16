@@ -4,7 +4,7 @@ This plugin modifies the behavior of the default NUnit3 test generator (NUnit3Te
 
 For example:
 
-```C#
+```
 [NUnit.Framework.TestFixtureAttribute()]
 ```
 becomes
