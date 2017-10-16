@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.NUnit", "src\Tests.NUnit\Tests.NUnit.csproj", "{31EAE208-3884-4B37-85C7-F5D78B28A85E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit3WithGlobalTestGenerator.SpecFlowPlugin", "src\NUnit3WithGlobalTestGenerator.SpecFlowPlugin\NUnit3WithGlobalTestGenerator.SpecFlowPlugin.csproj", "{6304F6A9-EB69-4FB1-8999-BD723B011757}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31EAE208-3884-4B37-85C7-F5D78B28A85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31EAE208-3884-4B37-85C7-F5D78B28A85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31EAE208-3884-4B37-85C7-F5D78B28A85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31EAE208-3884-4B37-85C7-F5D78B28A85E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6304F6A9-EB69-4FB1-8999-BD723B011757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6304F6A9-EB69-4FB1-8999-BD723B011757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6304F6A9-EB69-4FB1-8999-BD723B011757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6304F6A9-EB69-4FB1-8999-BD723B011757}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3891B4C0-0BAB-4FBD-94BB-2085D9047B9E}
+	EndGlobalSection
+EndGlobal
