@@ -1,6 +1,6 @@
-# SpecFlow NUnit3 Plugin
+# SpecFlow NUnit Plugin
 
-This plugin modifies the behavior of the default NUnit3 test generator (NUnit3TestGeneratorProvider) by adding the `global` keyword to the fully qualified attribute types that it outputs.
+This plugin modifies the behavior of the default NUnit and NUnit3 test generator by adding the `global` keyword to the fully qualified attribute types that it outputs.
 
 For example:
 
@@ -21,4 +21,4 @@ If a test project has a default namespace with "NUnit" in the name, then the tes
 >
 > Cannot resolve symbol 'Framework'
 
-You could resolve this issue by updating the default namespace in the test project to remove NUnit. This is the best option, but it is not always possible. You may have CI scripts that look for NUnit in the namespaces. In this instance, the **NUnit3WithGlobalTestGenerator** plugin is useful.
+You could resolve this issue by updating the default namespace in the test project to remove NUnit. This is the best option, but it is not always possible. You may have CI scripts that look for NUnit in the namespaces. In this instance, the **NUnit2WithGlobalTestGenerator** and **NUnit3WithGlobalTestGenerator** plugins are useful.
