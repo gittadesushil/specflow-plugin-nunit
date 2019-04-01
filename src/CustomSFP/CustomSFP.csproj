@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RootNamespace>Com.Org.SFP.CustomNUnitProperties.SpecFlowPlugin</RootNamespace>
+    <AssemblyName>Com.Org.SFP.CustomNUnitProperties.SpecFlowPlugin</AssemblyName>
+    <PackageId>$(AssemblyName)</PackageId>
+    <Description>$(PackageId)</Description>
+    <OutputPath>$(SolutionDir)Output\</OutputPath>
+    <DocumentationFile></DocumentationFile>
+    <Configurations>Debug;Release;Pack</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Com.Org.Commons" Condition="'$(Configuration)' == 'Pack'" />
+    <PackageReference Remove="Com.Org.Commons" Condition="'$(Configuration)' != 'Pack'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Remove="..\Commons\Commons.csproj" Condition="'$(Configuration)' == 'Pack'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Commons\Commons.csproj" />
+  </ItemGroup>
+
+</Project>
